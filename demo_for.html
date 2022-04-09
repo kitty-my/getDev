@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>for循环语句</title>
+</head>
+<body>
+	
+	<p id="demo"></p>
+	<button onclick="myFunction()">点击我</button>
+
+	<script type="text/javascript">
+		function myFunction(){
+			var cars=["BMW","Volvo","porscht","Ford"];
+			var i, len, text;
+			for(i = 0, len=cars.length, text=""; i<len; i++){//语句 1 中初始化多个值（由逗号分隔）
+				text +=cars[i]+"<br>";
+			}
+			document.getElementById("demo").innerHTML = text;
+			
+			
+		}
+	</script>
+
+</body>
+</html>

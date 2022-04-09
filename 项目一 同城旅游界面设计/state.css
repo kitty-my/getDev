@@ -1,0 +1,127 @@
+/*头部的设置样式*/
+*{
+	margin: 0px;/*清除外边距*/
+	padding: 0px;/*清除内边距*/
+}
+img{
+	border: none;/*去掉图像周边的边框的宽度。w3c不推荐使用因为不是所有主流浏览器均支持该属性*/
+}
+.header{
+	position: relative;/*position 属性规定元素的定位类型。*/
+	min-width: 50px;
+	width: 100%;
+	background: #C6D9EC;
+	overflow: hidden;/*overflow 属性规定当内容溢出元素框时发生的事情。*/
+}
+.img-item{
+	height: 100%;
+	overflow: hidden;
+	float: left;
+	margin: 10px 0px 0px;
+	padding: 0px;
+}
+.img-size{
+	width: 95%;
+	height: 110px;
+	background-color: #0CC;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/*主体设置样式*/
+.nav-list{
+	margin: 10px 10px 5px 10px;
+}
+.nav-list:after{/*:after 选择器在被选元素的内容后面插入内容。*/
+	content: '%0020';
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+}
+.nav-list li{
+	position: relative;
+	float: left;
+	margin-bottom: 5px;
+	-webkit-box-sizing: border-box;/*box-sizing 属性允许您以特定的方式定义匹配某个区域的特定元素。,-webkit代表chrome、safari私有属性[/size][/color]*/
+	-moz-box-sizing: border-box;/*-moz代表firefox浏览器私有属性*/
+	-ms-box-sizing: border-box;/*-ms代表IE浏览器私有属性*/
+}
+.nav-flight:before{/*:before 选择器在被选元素的内容前面插入内容。*/
+	top: 24px;
+	left: 50%;
+	width: 60px;
+	height: 35px;
+	background-position: 0 0;
+}
+.nav-car:before{
+	top: 30px;
+	left: 50%;
+	width: 35px;
+	height: 31px;
+	background-position: 130px 0;
+}
+.nav-hotel:before{
+	top: 30px;
+	left: 60%;
+	width: 58px;
+	height: 44px;
+	background-position: 0 -40px;
+}
+.nav-fortun:before{
+	top: 24px;
+	left: 50%;
+	width: 24px;
+	height: 35px;
+	background-position: -60px -30px;
+}
+.nav-strategy:before{
+	top: 24px;
+	left: 50%;
+	width: 60px;
+	height: 35px;
+	background-position: 0 0;
+}
+.nav-trip:before{
+	top: 34px;
+	left: 50%;
+	width: 34px;
+	height: 34px;
+	background-position: -120px -80px;
+}
+.nav-week:before{
+	top: 24px;
+	left: 50%;
+	width: 60px;
+	height: 35px;
+	background-position: 0 0;
+}
+.nav-ticket:before{
+	top: 25px;
+	left: 60%;
+	width: 40px;
+	height: 34px;
+	background-position: 0 0;
+}
+
+/* 尾部设置样式 */
+footer{
+	line-height: 27px;
+	text-align: center;
+	font-size: 12px;
+}
+.tool-box{
+	margin: 0px 10px;
+	padding-bottom: 5px;
+}
+.tool-cn{
+	margin-bottom: 3px;
+	padding: 8px 0;
+	height: 24px;
+	border-color: #CCCCCC;
+	line-height: 24px;
+	text-align: center;
+}
+.tool-ver{
+	background-color: red;
+}

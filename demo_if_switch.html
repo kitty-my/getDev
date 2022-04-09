@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>if语句和switch语句</title>
+</head>
+<body>
+	<p id="demo"></p>
+	<button onclick="myFunction()">点击我</button>
+
+	<script type="text/javascript">
+		
+		function myFunction(){
+			var hour=new Date().getHours();
+			var greeting;
+			var day;
+			var text;
+			if(hour<10){
+				greeting="早安";
+			}else if (hour>=10 && hour<20) {
+				greeting="午安";
+			}else{
+				greeting="晚安"
+			}
+			//document.getElementById("demo").innerHTML=greeting;
+			switch(new Date().getDay()){//getDay() 方法返回 0 至 6 的数字周名。
+				case 0:
+					day="星期天";
+					break;//如果 JavaScript 遇到 break 关键词，它会跳出 switch 代码块。
+				case 1:
+					day="星期1";
+					break;
+				case 2:
+					day="星期2";
+					break;
+				case 3:
+					day="星期3";
+					break;
+				case 4:
+					day="星期4";
+					break;
+				case 5:
+					day="星期5";
+					break;
+				case 6:
+					day="星期6";
+					break;
+			}
+			//document.getElementById("demo").innerHTML=day;
+			switch(new Date().getDay()){
+				/*default:
+					text="期待周末";*/
+				case 6:
+					text="周六";
+					break;
+				case 0:
+					text="周日";
+					break;
+				default://default 关键词规定不存在 case 匹配时所运行的代码,这个不一定放在最后，也可以放在前面
+					text="期待周末";
+			}
+			document.getElementById("demo").innerHTML=text;
+		}
+
+	</script>
+</body>
+</html>
