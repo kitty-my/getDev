@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=	, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+
+		const person={
+			name:"bill",
+			age:function () {return 19;},
+			city:"seattle",
+			today:new Date(),
+			languager:"en",
+			/*get lang() {
+				return this.languager;
+			}*/
+			set lang(lang){
+				this.languager=lang;
+				this.languager=lang.toUpperCase();
+			}
+
+		};
+
+		person.lang="en";
+
+		let txt = "";
+		for(let x in person){
+			txt += person[x]+ " ";
+		}
+		
+		const myArray = Object.values(person);
+		let myString= JSON.stringify(person);
+
+		document.getElementById("demo").innerHTML=person.languager;
+	</script>
+
+
+</body>
+</html>
